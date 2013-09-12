@@ -9,3 +9,13 @@ a {color: #0000FF;}
 .nav{word-spacing: 4px;}
 .content{width:960px;margin:50px auto;}
 #preview blockquote{border-left: 4px solid #DDD;padding: 0 15px;color: #777;}
+.copyright{
+	margin:0 auto;
+	padding-top:75px;
+	text-align:center;
+	width:960px;
+	font-size:12px;
+	font-family:Arial,Helvetica,sans-serif;
+	color:#000;/*黑色*/
+	background:#FFF;/*白色*/
+}
