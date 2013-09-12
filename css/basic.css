@@ -8,3 +8,4 @@ a {color: #0000FF;}
 .header a{color: #333;text-decoration:none;}
 .nav{word-spacing: 4px;}
 .content{width:960px;margin:50px auto;}
+#preview blockquote{border-left: 4px solid #DDD;padding: 0 15px;color: #777;}
