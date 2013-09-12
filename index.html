@@ -16,7 +16,7 @@
 		.content{width:960px;margin:50px auto;}
 	</style>
 	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
-	<script type="text/javascript" src="_js/showdown.js"></script>
+	<script type="text/javascript" src="js/showdown.js"></script>
 	<script type="text/javascript">
 		window.onload = function () {
 			$.get(router(), function(data){
@@ -27,7 +27,7 @@
 		function router() {
 			var md_page = 'index';//初始化为index.md
 			
-			return '_post/'+md_page+'.txt';
+			return 'post/'+md_page+'.txt';
 		}
 		//解析md->html
 		function md2html(data) {
