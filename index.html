@@ -2,11 +2,57 @@
 <html lang="en-US">
 <head>
 	<meta charset="UTF-8">
-	<title>sh7ning</title>
-	<link rel="shortcut icon" href="/favicon.ico"/>
+	<title></title>
+	<style type="text/css">
+		html,body,h1,h2,h3,h4,h5,h6,dl,dt,dd {padding: 0px;margin: 0px;}
+		*{color: #333;}
+		html {font-size: 16px;font-family: "serif";background: #fff;}
+		a {color: #0000FF;}
+		.header{position:fixed;_postion:absolute;width:100%;height:44px;border-top:2px solid #e9573f;top:0px;background:#fafafa;}
+		.header_wrapper{width:960px;margin:0 auto;}
+		.header .my_site{height:24px;line-height:24px;color: #999;}
+		.header a{color: #333;text-decoration:none;}
+		.nav{word-spacing: 4px;}
+		.content{width:960px;margin:50px auto;}
+	</style>
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script type="text/javascript" src="_js/showdown.js"></script>
+	<script type="text/javascript">
+		window.onload = function () {
+			$.get(router(), function(data){
+				preview(md2html(data));
+			});
+		}
+		//解析url获取文章
+		function router() {
+			var md_page = 'index';//初始化为index.md
+			
+			return '_post/'+md_page+'.md';
+		}
+		//解析md->html
+		function md2html(data) {
+			var converter = new Showdown.converter();
+            return converter.makeHtml(data);
+		}
+		function preview(html) {
+			$('#preview').html(html);
+		}
+	</script>
 </head>
 <body>
-this is my blog, test. <br />
-by sh7ning
+	<div class="header">
+		<div class="header_wrapper">
+			<i class="my_site">blog.sh7ne.com</i>
+			<div class="nav">
+				<a href="">首页</a>
+				<a href="">归档</a>
+				<a href="">关于</a>
+			</div>
+		</div>
+	</div>
+	
+	<div class="content">
+		<div id="preview"></div>
+	</div>
 </body>
 </html>
