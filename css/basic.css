@@ -9,8 +9,7 @@ a {color: #0000FF;}
 .nav{word-spacing: 4px;}
 .content{width:960px;margin:50px auto;}
 #preview blockquote{border-left: 4px solid #DDD;padding: 0 15px;color: #777;}
-.copyright{
-	margin:0 auto;
+.copyright{margin:0 auto;
 	padding-top:75px;
 	text-align:center;
 	width:960px;
@@ -19,3 +18,5 @@ a {color: #0000FF;}
 	color:#000;/*黑色*/
 	background:#FFF;/*白色*/
 }
+.site_analytics{text-align:center;}
+.site_analytics a{color: #000;font-size: 12px;text-decoration: none;}
