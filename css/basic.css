@@ -7,10 +7,9 @@ a {color: #0000FF;}
 .header .my_site{height:24px;line-height:24px;color: #999;}
 .header a{color: #333;text-decoration:none;}
 .nav{word-spacing: 4px;}
-.content{width:960px;margin:50px auto;}
+.content{width:960px;margin:69px auto 50px;}
 #preview blockquote{border-left: 4px solid #DDD;padding: 0 15px;color: #777;}
 .copyright{margin:0 auto;
-	padding-top:75px;
 	text-align:center;
 	width:960px;
 	font-size:12px;
